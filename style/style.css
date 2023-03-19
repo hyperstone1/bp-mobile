@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'SFPro';
+  src: url('../fonts/sfpro/SFProDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: 'SFPro-thin';
+  src: url('../fonts/sfpro/SFProDisplay-Thin.ttf');
+}
+@font-face {
+  font-family: 'SFPro-semibold';
+  src: url('../fonts/sfpro/SFProDisplay-Semibold.ttf');
+}
+@font-face {
+  font-family: 'SFPro-bold';
+  src: url('../fonts/sfpro/SFProDisplay-Bold.ttf');
+}
+@font-face {
+  font-family: 'SFPro-heavy';
+  src: url('../fonts/sfpro/SFProDisplay-Heavy.ttf');
+}
+@font-face {
+  font-family: 'SFPro-medium';
+  src: url('../fonts/sfpro/SFProDisplay-Medium.ttf');
+}
+@font-face {
+  font-family: 'SFPro-text';
+  src: url('../fonts/sfpro-text/SFProText-Bold.ttf');
+}
+@font-face {
+  font-family: 'SFPro-text-regular';
+  src: url('../fonts/sfpro-text/SFProText-Regular.ttf');
+}
+@font-face {
+  font-family: 'SFPro-text-light';
+  src: url('../fonts/sfpro-text/SFProText-Light.ttf');
+}
+
+body {
+  margin: 0;
+  background: url('../Assets/background-full/4@2x.png');
+  background-size: 100%;
+  font-family: 'SFPro';
+}
+.close_restore a {
+  height: 23px;
+}
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+.container {
+  padding-top: 156px;
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  padding-bottom: 29px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'SFPro-bold';
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ul {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 44px;
+  font-family: 'SFPro-thin';
+  /* Если  не пиксель перфект верстка,то нужно убрать*/
+  margin-left: 17%;
+  margin-top: 4px;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  list-style-type: none;
+  font-size: 17px;
+}
+img {
+  width: 21px;
+  height: 21px;
+}
+img:first-child {
+  width: 25px;
+  height: 25px;
+}
+.description_text span {
+  display: inline-flex;
+  align-items: center;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
+  font-family: 'SFPro-text-light';
+  font-weight: 300;
+  letter-spacing: -0.015161px;
+}
+.subscribe_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 18px;
+  /* Если не пиксель-перфект верстка,то нужно убрать стили ниже */
+
+  width: 98%;
+  margin-top: 1px;
+  margin-left: 0;
+  /* justify-content: space-between; */
+}
+.subscribe_price_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 38px 14px 38px;
+  /* background: rgba(73, 87, 149, 0.197154); */
+  /* border: 1px solid #495795; */
+  border-radius: 20.9px;
+  /* Если не пиксель-перфект верстка,то нужно убрать стили ниже */
+  width: 146.39px;
+  height: 178px;
+  padding: 0;
+}
+.monthly {
+  background-image: url('../Assets/shape-1.svg');
+  background-size: 100% 100%;
+}
+.annualy {
+  background-image: url('../Assets/shaped-2.svg');
+  background-size: 100% 100%;
+}
+.discont {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  font-family: 'SFPro-heavy';
+}
+
+/* .subscribe_price_container::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+} */
+.active {
+  opacity: 1;
+}
+.active .price_info {
+  padding: 2px 0px;
+  width: 151px;
+  left: -2px;
+  font-size: 14px;
+  bottom: 40px;
+  /* Если не пиксель-перфект верстка,то нужно убрать стили ниже */
+}
+.disable {
+  padding: 1px 0px;
+  opacity: 0.5;
+  padding: 15px 30px 10px;
+  height: 130px;
+  /* Если не пиксель-перфект верстка,то нужно убрать стили ниже */
+  padding: 0;
+  width: 131px;
+  height: 162px;
+}
+.disable .subscribe_price_container_title {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.disable .price_info {
+  width: 139px;
+  left: -4px;
+  font-size: 14px;
+  bottom: 37px;
+  padding: 1px 0px;
+}
+.disable .subscribe_price_container_price {
+  margin-bottom: 38px;
+}
+.subscribe_price_container_title {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  margin-bottom: 11.25px;
+  /* Если не пиксель-перфект верстка,то нужно убрать стили ниже */
+  margin-bottom: 14px;
+  margin-top: 13px;
+  text-transform: lowercase;
+}
+.subscribe_price_container_title::first-letter {
+  text-transform: uppercase;
+}
+.subscribe_price_container_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 44px;
+}
+.subscribe_price_container_price span {
+  font-size: 15px;
+  margin-top: -4px;
+}
+.subscribe_price_container_price_info {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.price_info {
+  position: absolute;
+  bottom: 43px;
+  width: 150px;
+  text-align: center;
+  left: -4px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ffffff;
+  background: #495795;
+  font-family: 'SFPro-text';
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 17px 104.5px;
+  background: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'SFPro-bold';
+  margin-bottom: 16px;
+}
+.subscribe_info {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  color: #bdc0d0;
+  margin-bottom: 16px;
+}
+.terms_privacy {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+  width: 87%;
+  margin: 0 auto;
+}
+.terms,
+.privacy {
+  font-size: 11px;
+  text-decoration: underline;
+  color: #bdc0d0;
+  font-family: 'Roboto';
+}
+.close_restore {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.restore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  letter-spacing: -0.216667px;
+}
+.home_indicator {
+  width: 134px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
