@@ -101,7 +101,19 @@
     height: 25px;
   }
 }
-@media (height < 741px) {
+@media (height < 760px) {
+  .container {
+    padding-top: 120px !important;
+  }
+
+  header {
+    padding-bottom: 13px;
+  }
+  .terms_privacy {
+    padding-bottom: 18px;
+  }
+}
+@media (height < 720px) {
   .close_restore {
     padding-top: 20px;
   }
@@ -124,7 +136,20 @@
     font-size: 12px !important;
   }
 }
+
 @media (height > 870px) {
+  .container {
+    padding-top: 175px !important;
+  }
+  li {
+    font-size: 17px !important;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (height > 895px) {
   .container {
     padding-top: 175px !important;
   }
