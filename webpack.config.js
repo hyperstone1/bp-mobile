@@ -53,6 +53,15 @@ module.exports = {
         //   },
         // ],
       },
+      //   {
+      //     test: /\.(json)$/,
+      //     type: 'asset/resourse',
+      //     use: [
+      //       {
+      //         loader: 'file-loader?name=./fonts/sfpro/[name].[ext]',
+      //       },
+      //     ],
+      //   },
     ],
   },
 };

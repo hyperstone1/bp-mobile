@@ -1,6 +1,7 @@
 import './checkLocal';
 import './script';
 import './events';
+import './langs';
 import '../style/style.css';
 import '../style/media.css';
 

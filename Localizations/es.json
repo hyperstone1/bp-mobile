@@ -1,4 +1,5 @@
 {
+  "lang": "es",
   "Unlimited Access<br>to All Features": "Acceso ilimitado a todas las funciones",
   "Unlimited documents": "Documentos ilimitados",
   "Count mode": "Modo de recuento",
@@ -16,5 +17,5 @@
   "Terms of Use": "Términos de uso",
   "Restore": "Restablecer",
   "Privacy Policy": "Política de privacidad",
-  "export":"Exportar a las nubes"
+  "export": "Exportar a las nubes"
 }
