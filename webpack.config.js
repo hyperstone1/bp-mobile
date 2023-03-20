@@ -30,8 +30,8 @@ module.exports = {
       },
       // изображения
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/inline',
+        test: /\.(?:ico|gif|svg|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
       },
 
       // css
@@ -42,7 +42,7 @@ module.exports = {
 
       // шрифты и SVG
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         type: 'asset/inline',
         // use: [
         //   {
