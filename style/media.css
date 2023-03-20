@@ -1,6 +1,6 @@
 @media (width < 390px) {
   header {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
   li {
     font-size: 12px !important;
@@ -8,6 +8,120 @@
   img {
     width: 21px;
     height: 21px;
+  }
+  .btn {
+    padding: 14px 92.5px;
+    font-size: 15px;
+  }
+  .subscribe_price {
+    width: 100%;
+  }
+  .subscribe_price_container {
+    width: 128.39px;
+    height: 159px;
+  }
+  .subscribe_price_container_title {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+  .subscribe_price_container_price {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+  .subscribe_price_container_price span {
+    margin-top: 0;
+  }
+  .active .price_info {
+    width: 134px;
+    font-size: 12px;
+    bottom: 43px;
+  }
+  .disable {
+    height: 144px;
+  }
+  .disable .discont {
+    top: 0px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+  }
+  .disable .subscribe_price_container_price {
+    margin-bottom: 29px;
+  }
+  .disable .subscribe_price_container_title {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+  .disable .price_info {
+    width: 125px;
+    font-size: 11px;
+    bottom: 37px;
+    left: 2px;
+  }
+}
+@media (height < 837px) {
+  .container {
+    padding-top: 135px !important;
+  }
+  .description_text svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  li {
+    font-size: 13px !important;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (height < 800px) {
+  .container {
+    padding-top: 135px !important;
+  }
+  .description_text svg {
+    width: 21px;
+    height: 21px;
+  }
+  header {
+    font-size: 30px;
+    line-height: 32px !important;
+  }
+  ul {
+    padding-bottom: 27px;
+  }
+  li {
+    font-size: 13px !important;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (height < 741px) {
+  .close_restore {
+    padding-top: 20px;
+  }
+  .container {
+    padding-top: 110px !important;
+  }
+  .description_text svg {
+    width: 19px;
+    height: 19px;
+  }
+  header {
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px !important;
+  }
+  ul {
+    padding-bottom: 27px;
+  }
+  li {
+    font-size: 12px !important;
   }
 }
 @media (height > 870px) {
