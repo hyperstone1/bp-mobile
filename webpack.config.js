@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, './src/app.js'),
+    main: path.resolve(__dirname, './src/js/app.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, './index.html'),
+      template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
