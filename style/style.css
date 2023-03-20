@@ -130,6 +130,7 @@ img {
   width: 146.39px;
   height: 178px;
   padding: 0;
+  cursor: pointer;
 }
 .monthly {
   background-image: url('../Assets/shape-1.svg');
@@ -164,6 +165,8 @@ img {
 } */
 .active {
   opacity: 1;
+  transition: opacity 0.4s;
+  transition: width 0.1s;
 }
 .active .price_info {
   padding: 2px 0px;
@@ -190,7 +193,7 @@ img {
 .disable .price_info {
   width: 139px;
   left: -4px;
-  font-size: 14px;
+  font-size: 13px;
   bottom: 37px;
   padding: 1px 0px;
 }
@@ -245,13 +248,22 @@ img {
   justify-content: center;
   margin: 0 auto;
   padding: 17px 104.5px;
-  background: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);
+  background-image: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);
+  background-size: 100% 100%;
   border-radius: 30px;
   border: none;
   color: #ffffff;
   font-size: 17px;
   font-family: 'SFPro-bold';
   margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover {
+  transition: all 0.4s;
+  background-size: 300% 100%;
+  box-shadow: rgba(49, 107, 173, 0.4) 0px 0px 0px 2px, rgba(14, 96, 190, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .subscribe_info {
   display: flex;
