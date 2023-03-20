@@ -14,15 +14,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, './index.html'), // шаблон
-      filename: 'index.html', // название выходного файла
+      template: path.resolve(__dirname, './index.html'),
+      filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
-      // JavaScript
+      // JS
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -40,29 +40,11 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
 
-      // шрифты и SVG
+      // шрифты
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         type: 'asset/inline',
-        // use: [
-        //   {
-        //     loader: 'file-loader?name=./fonts/sfpro/[name].[ext]',
-        //     loader: 'file-loader?name=./fonts/sfpro-text/[name].[ext]',
-        //     loader: 'file-loader?name=./Assets/[name].[ext]',
-
-        //   },
-        // ],
       },
-
-      //   {
-      //     test: /\.(json)$/,
-      //     type: 'asset/resourse',
-      //     use: [
-      //       {
-      //         loader: 'file-loader?name=./fonts/sfpro/[name].[ext]',
-      //       },
-      //     ],
-      //   },
     ],
   },
 };
