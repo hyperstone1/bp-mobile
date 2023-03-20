@@ -1,6 +1,6 @@
 import '../style/style.css';
 import '../style/media.css';
-import './checkLocal';
+import './changeStyles';
 import './constants';
-import './script';
+import './changLang';
 import './events';

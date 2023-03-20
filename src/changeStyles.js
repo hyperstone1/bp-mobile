@@ -1,4 +1,4 @@
-const checkLocal = function () {
+const changeStyles = function () {
   const container = document.querySelector('.container');
   const headerText = document.querySelector('.header');
   const descriptionText = document.querySelectorAll('.description_text');
@@ -12,5 +12,5 @@ const checkLocal = function () {
     }
   })();
 };
-checkLocal();
-export default checkLocal;
+changeStyles();
+export default changeStyles;

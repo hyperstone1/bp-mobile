@@ -23,7 +23,9 @@ const changeLang = () => {
     (async () => {
       const lang = navigator.language.slice(0, 2);
       let data = langs.filter((item) => item.lang === lang);
-      console.log(data);
+      if (langs.filter((item) => item.lang === lang).length <= 0) {
+        data = langs[0];
+      }
       if (history.pushState) {
         let baseUrl =
           window.location.protocol + '//' + window.location.host + window.location.pathname;
@@ -71,4 +73,3 @@ const changeLang = () => {
 changeLang();
 
 export default changeLang;
-
