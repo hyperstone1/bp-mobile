@@ -1,0 +1,25 @@
+@import url('./style.css');
+@media (width < 390px) {
+  header {
+    font-size: 30px !important;
+  }
+  li {
+    font-size: 12px !important;
+  }
+  img {
+    width: 21px;
+    height: 21px;
+  }
+}
+@media (height > 870px) {
+  .container {
+    padding-top: 175px !important;
+  }
+  li {
+    font-size: 17px !important;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}

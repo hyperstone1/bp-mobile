@@ -1,4 +1,3 @@
-console.log(navigator.language);
 const restore = document.querySelector('.restore');
 const header = document.querySelector('.header');
 const title = document.querySelector('.description_text_title');

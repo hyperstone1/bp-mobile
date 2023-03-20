@@ -38,8 +38,9 @@
 body {
   margin: 0;
   background: url('../Assets/background-full/4@2x.png');
-  background-size: 100%;
   font-family: 'SFPro';
+  height: 100%;
+  background-size: cover;
 }
 .close_restore a {
   height: 23px;
@@ -94,10 +95,7 @@ img {
   width: 21px;
   height: 21px;
 }
-img:first-child {
-  width: 25px;
-  height: 25px;
-}
+
 .description_text span {
   display: inline-flex;
   align-items: center;
@@ -301,4 +299,7 @@ img:first-child {
   border-radius: 100px;
   margin: 0 auto;
   margin-bottom: 6px;
+}
+.fz_lang {
+  font-size: 15px;
 }
