@@ -1,4 +1,4 @@
-var checkLocal = function () {
+const checkLocal = function () {
   const container = document.querySelector('.container');
   const headerText = document.querySelector('.header');
   const descriptionText = document.querySelectorAll('.description_text');
@@ -13,4 +13,4 @@ var checkLocal = function () {
   })();
 };
 checkLocal();
-module.exports = checkLocal;
+export default checkLocal;

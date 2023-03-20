@@ -1,9 +1,8 @@
+import { google, apple } from './constants';
+
 const events = () => {
-  let google = 'https://google.com';
-  let apple = 'https://apple.com';
   const subscribePriceContainer = document.querySelectorAll('.subscribe_price_container ');
   const button = document.querySelector('.btn');
-
   subscribePriceContainer.forEach((item, idx) => {
     item.addEventListener('click', (e) => {
       subscribePriceContainer.forEach((item, idx) => {
@@ -19,7 +18,6 @@ const events = () => {
   });
 
   button.addEventListener('click', () => {
-    console.log(subscribePriceContainer[0]);
     if (subscribePriceContainer[0].classList.contains('active')) {
       location.href = apple;
     } else {
@@ -27,6 +25,6 @@ const events = () => {
     }
   });
 };
-events()
+events();
 
-module.exports = events;
+export default events;
